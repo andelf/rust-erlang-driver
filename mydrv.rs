@@ -4,13 +4,12 @@
 #[crate_type="dylib"];
 
 extern crate time;
-extern crate extra;
 
 use std::libc::*;
 use std::cast::transmute;
 use std::c_str::CString;
 use std::mem::size_of;
-use extra::c_vec::CVec;
+use std::c_vec::CVec;
 
 
 use erl_driver::*;
